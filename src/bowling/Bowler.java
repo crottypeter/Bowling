@@ -11,11 +11,15 @@ public class Bowler {
 	}
 
 	public void print(PrintStream out) {
-		out.print(name);
+		out.println(name);
 	}
 
 	public boolean nameMatches(String otherName) {
-		return name.trim().equals(otherName.trim());
+		return name.equals(otherName);
 	}
-	
+
+	public int score() {
+		return 0;
+	}
+
 }
