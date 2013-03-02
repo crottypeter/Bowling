@@ -13,4 +13,9 @@ public class Bowler {
 	public void print(PrintStream out) {
 		out.print(name);
 	}
+
+	public boolean nameMatches(String otherName) {
+		return name.trim().equals(otherName.trim());
+	}
+	
 }
