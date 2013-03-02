@@ -1,1 +1,1 @@
-gcj src/bowling/* --main=bowling.HelloWorld
+gcj src/bowling/* --main=bowling.HelloWorld -o playBowling
