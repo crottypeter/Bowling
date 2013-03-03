@@ -5,11 +5,9 @@ import java.util.List;
 
 public class Frame {
 
-	private final int frameNumber;
 	private final List<Ball> balls;
 
-	public Frame(int frameNumber) {
-		this.frameNumber = frameNumber;
+	public Frame() {
 		this.balls = new ArrayList<Ball>();
 	}
 
