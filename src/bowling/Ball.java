@@ -4,7 +4,7 @@ public class Ball {
 
 	private int pins;
 
-	public void setPins(int pins) {
+	public Ball(int pins) {
 		this.pins = pins;
 	}
 
