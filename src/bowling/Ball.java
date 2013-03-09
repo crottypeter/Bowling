@@ -12,4 +12,14 @@ public class Ball {
 		return pins;
 	}
 
+	public boolean isSpare() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean isStrike() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

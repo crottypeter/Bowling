@@ -1,6 +1,8 @@
 package bowling;
 
+import java.io.BufferedReader;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class Frame {
@@ -32,6 +34,10 @@ public class Frame {
 			scoreFromPins += ball.getPins();
 		}
 		return scoreFromPins;
+	}
+	public Collection<? extends Ball> bowl(BufferedReader reader) {
+		// TODO Auto-generated method stub
+		return balls;
 	}
 
 	//	public void bowlBall(BufferedReader reader) {

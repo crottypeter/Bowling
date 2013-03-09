@@ -12,9 +12,11 @@ public class BowlingGame {
 
 	private void play() {
 		//get players
-		Team team = new TeamFactory().getTeam(System.out, new BufferedReader(new InputStreamReader(System.in)));
+		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+		Team team = new TeamFactory().getTeam(System.out, bufferedReader);
 		team.print(System.out);
 		//play game
+		team.bowl(System.out, bufferedReader);
 		//print winner
 	}
 
