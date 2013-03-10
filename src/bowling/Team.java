@@ -3,6 +3,7 @@ package bowling;
 import java.io.BufferedReader;
 import java.io.PrintStream;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Team {
@@ -10,7 +11,7 @@ public class Team {
 	private final List<Bowler> bowlers;
 
 	public Team(List<Bowler> bowlers) {
-		this.bowlers = Collections.unmodifiableList(bowlers);
+		this.bowlers = bowlers;
 	}
 
 	public void print(PrintStream out) {
@@ -49,6 +50,16 @@ public class Team {
 			bowler.bowlFrame(out, bufferedReader);
 		}
 		print(out);
+	}
+
+	public void printWinner(PrintStream out) {
+		Collections.sort(bowlers, new Comparator<Bowler>() {
+
+			public int compare(Bowler o1, Bowler o2) {
+				return o2.scoreAtFrame(9) - o1.scoreAtFrame(9);
+			}
+		});
+		out.println("And the winner is " + bowlers.get(0).name());
 	}
 
 }

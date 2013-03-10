@@ -18,6 +18,7 @@ public class BowlingGame {
 		//play game
 		team.bowl(System.out, bufferedReader);
 		//print winner
+		team.printWinner(System.out);
 	}
 
 }

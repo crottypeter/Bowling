@@ -82,4 +82,8 @@ public class Bowler {
 		currentFrame++;
 	}
 
+	public String name() {
+		return name;
+	}
+
 }
