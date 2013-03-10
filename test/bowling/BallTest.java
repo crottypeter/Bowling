@@ -12,7 +12,7 @@ public class BallTest {
 
 	@Test
 	public void givenBall_whenPinsSet_thenPinsValueMatches() {
-		Ball ball = new Ball(FOUR);
+		Ball ball = Ball.normalBall(FOUR);
 		assertThat(ball.getPins(), is(equalTo(FOUR)));
 	}
 

@@ -17,20 +17,36 @@ public class Team {
 		for (Bowler bowler : bowlers) {
 			out.println(bowler.toString());
 		}
-		out.println(teamScore());
+		out.println(String.format("Team total            %3d | %3d | %3d | %3d | %3d | %3d | %3d | %3d | %3d | %3d",
+				teamScoreAtFrame(0),
+				teamScoreAtFrame(1),
+				teamScoreAtFrame(2),
+				teamScoreAtFrame(3),
+				teamScoreAtFrame(4),
+				teamScoreAtFrame(5),
+				teamScoreAtFrame(6),
+				teamScoreAtFrame(7),
+				teamScoreAtFrame(8),
+				teamScoreAtFrame(9)));
 	}
 
-	private int teamScore() {
+	private int teamScoreAtFrame(int frameNumber) {
 		int score = 0;
 		for (Bowler bowler : bowlers) {
-			score += bowler.scoreFromPins();
+			score += bowler.scoreAtFrame(frameNumber);
 		}
 		return score;
 	}
 
 	public void bowl(PrintStream out, BufferedReader bufferedReader) {
+		for (int i = 0; i < 10; i++) {
+			bowlFrame(out, bufferedReader);
+		}
+	}
+
+	private void bowlFrame(PrintStream out, BufferedReader bufferedReader) {
 		for (Bowler bowler : bowlers) {
-			bowler.bowlFrame(bufferedReader);
+			bowler.bowlFrame(out, bufferedReader);
 		}
 		print(out);
 	}
