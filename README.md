@@ -12,3 +12,8 @@ For this reason I duplicated make with make32. The only difference is the name o
 
 I tried to be test driven but unfortunately the complexities of Bowling scoring caused me to change my design slightly part way through development.
 I didn't keep my tests up to date with this. Bad me!
+
+Dependencies
+============
+java
+gcj
