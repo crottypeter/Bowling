@@ -19,3 +19,8 @@ Dependencies
 ============
 java
 gcj
+
+Things to improve
+=================
+Test coverage
+Delayed display of score when a strike/spare has been scored but the following ball(s) (for the bonus) have not yet been bowled.
