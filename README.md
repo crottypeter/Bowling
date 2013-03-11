@@ -16,11 +16,11 @@ I didn't keep my tests up to date with this. Bad me!
 In my defence I did test it at the command-line quite a lot - yes I know these can't be run automatically!
 
 Dependencies
-============
+------------
 java
 gcj
 
 Things to improve
-=================
+-----------------
 Test coverage
 Delayed display of score when a strike/spare has been scored but the following ball(s) (for the bonus) have not yet been bowled.
